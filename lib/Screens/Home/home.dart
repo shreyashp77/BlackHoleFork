@@ -311,12 +311,19 @@ class _HomePageState extends State<HomePage> {
                   flexibleSpace: FlexibleSpaceBar(
                     title: RichText(
                       text: TextSpan(
-                        text: AppLocalizations.of(context)!.appTitle,
+                        text: "Mu",
                         style: const TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.w500,
                         ),
                         children: <TextSpan>[
+                          TextSpan(
+                            text: "Sick!",
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.secondary,
+                              fontSize: 30.0,
+                            ),
+                          ),
                           TextSpan(
                             text: appVersion == null ? '' : '\nv$appVersion',
                             style: const TextStyle(
@@ -443,19 +450,19 @@ class _HomePageState extends State<HomePage> {
                           );
                         },
                       ),
-                      ListTile(
-                        title: Text(AppLocalizations.of(context)!.about),
-                        contentPadding:
-                            const EdgeInsets.symmetric(horizontal: 20.0),
-                        leading: Icon(
-                          Icons.info_outline_rounded,
-                          color: Theme.of(context).iconTheme.color,
-                        ),
-                        onTap: () {
-                          Navigator.pop(context);
-                          Navigator.pushNamed(context, '/about');
-                        },
-                      ),
+                      // ListTile(
+                      //   title: Text(AppLocalizations.of(context)!.about),
+                      //   contentPadding:
+                      //       const EdgeInsets.symmetric(horizontal: 20.0),
+                      //   leading: Icon(
+                      //     Icons.info_outline_rounded,
+                      //     color: Theme.of(context).iconTheme.color,
+                      //   ),
+                      //   onTap: () {
+                      //     Navigator.pop(context);
+                      //     Navigator.pushNamed(context, '/about');
+                      //   },
+                      // ),
                     ],
                   ),
                 ),
@@ -527,7 +534,7 @@ class _HomePageState extends State<HomePage> {
                                   angle: 22 / 7 * 2,
                                   child: IconButton(
                                     icon: const Icon(
-                                      Icons.horizontal_split_rounded,
+                                      Icons.arrow_forward_ios_rounded,
                                     ),
                                     // color: Theme.of(context).iconTheme.color,
                                     onPressed: () {
@@ -838,8 +845,12 @@ class _HomePageState extends State<HomePage> {
                                       child: Transform.rotate(
                                         angle: 22 / 7 * 2,
                                         child: IconButton(
-                                          icon: const Icon(
-                                            Icons.horizontal_split_rounded,
+                                          icon: Icon(
+                                            Icons.audiotrack_outlined,
+                                            size: 35,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .secondary,
                                           ),
                                           // color: Theme.of(context).iconTheme.color,
                                           onPressed: () {

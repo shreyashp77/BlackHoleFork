@@ -198,7 +198,7 @@ class _SettingPageState extends State<SettingPage> {
                         .settings,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                      fontSize: 80,
+                      fontSize: 70,
                       color: Colors.white,
                     ),
                   ),
@@ -3632,90 +3632,6 @@ class _SettingPageState extends State<SettingPage> {
                             AppLocalizations.of(
                               context,
                             )!
-                                .likedWork,
-                          ),
-                          subtitle: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .buyCoffee,
-                          ),
-                          dense: true,
-                          onTap: () {
-                            launchUrl(
-                              Uri.parse(
-                                'https://www.buymeacoffee.com/ankitsangwan',
-                              ),
-                              mode: LaunchMode.externalApplication,
-                            );
-                          },
-                        ),
-                        ListTile(
-                          title: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .donateGpay,
-                          ),
-                          subtitle: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
-                                .donateGpaySub,
-                          ),
-                          dense: true,
-                          isThreeLine: true,
-                          onTap: () {
-                            const String upiUrl =
-                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole';
-                            launchUrl(
-                              Uri.parse(upiUrl),
-                              mode: LaunchMode.externalApplication,
-                            );
-                          },
-                          onLongPress: () {
-                            copyToClipboard(
-                              context: context,
-                              text: 'ankit.sangwan.5688@oksbi',
-                              displayText: AppLocalizations.of(
-                                context,
-                              )!
-                                  .upiCopied,
-                            );
-                          },
-                          trailing: TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Theme.of(context).brightness ==
-                                      Brightness.dark
-                                  ? Colors.white
-                                  : Colors.grey[700],
-                            ),
-                            onPressed: () {
-                              copyToClipboard(
-                                context: context,
-                                text: 'ankit.sangwan.5688@oksbi',
-                                displayText: AppLocalizations.of(
-                                  context,
-                                )!
-                                    .upiCopied,
-                              );
-                            },
-                            child: Text(
-                              AppLocalizations.of(
-                                context,
-                              )!
-                                  .copy,
-                              style: const TextStyle(
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                        ListTile(
-                          title: Text(
-                            AppLocalizations.of(
-                              context,
-                            )!
                                 .contactUs,
                           ),
                           subtitle: Text(
@@ -3814,7 +3730,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://instagram.com/sangwan5688',
+                                                    'https://instagram.com/shreyash.pardikar',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
